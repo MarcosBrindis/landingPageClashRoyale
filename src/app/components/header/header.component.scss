@@ -1,0 +1,70 @@
+.header {
+    position: relative; /* Cambia a relative para manejar la imagen de fondo correctamente */
+    width: 100%; /* Usa 100% para que sea responsive */
+    height: 249px; 
+    background: #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden; /* Asegura que la imagen de fondo no sobresalga */
+  
+    .header-background {
+      position: absolute; /* Posición absoluta para cubrir todo el header */
+      top: 0;
+      left: 0;
+      width: 100%; /* Asegura que la imagen se ajuste al ancho del header */
+      height: 100%; /* Asegura que la imagen cubra toda la altura del header */
+      object-fit: cover; /* Mantiene la relación de aspecto de la imagen */
+      z-index: 1; /* Asegura que la imagen esté detrás de los botones */
+    }
+  
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      position: absolute; /* Mantiene la posición absoluta */
+      left: 1257px; /* Posición desde la izquierda */
+      top: 184px; /* Posición desde la parte superior */
+      z-index: 2; /* Asegura que los botones estén por encima de la imagen */
+      padding: 10px;
+  
+      .header-button {
+        font-family: 'Konkhmer Sleokchher';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px; /* Tamaño de letra personalizado */
+        line-height: 65px; /* Altura de línea */
+        color: white; /* Color del texto */
+        background: transparent; /* Fondo transparente para los botones */
+        border: none; /* Sin borde */
+        cursor: pointer;
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+  
+        &:hover {
+          text-decoration: underline; /* Añade un efecto hover */
+        }
+      }
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .header {
+      height: auto; /* Ajusta la altura para pantallas más pequeñas */
+    }
+  
+    .button-container {
+      left: 20px; /* Ajusta la posición para pantallas más pequeñas */
+      top: auto; /* Deja que la posición vertical se ajuste automáticamente */
+      bottom: 10px; /* Fija desde la parte inferior */
+      right: 20px; /* Fija desde la derecha */
+    }
+  
+    .header-button {
+      font-size: 24px; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+      line-height: 40px; /* Ajusta la altura de línea para pantallas más pequeñas */
+    }
+  }
+  

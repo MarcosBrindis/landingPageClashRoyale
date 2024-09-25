@@ -1,0 +1,96 @@
+/* Contenedor principal */
+.card {
+    width: 633px;
+    height: 290px;
+    position: relative;
+  }
+  
+  /* Card principal */
+  .card-principal {
+    width: 633px;
+    height: 290px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0d1320;
+    border-radius: 10px;
+    border: 5px solid white;
+  }
+  
+  /* Imagen principal */
+  .art-card {
+    width: 279px;
+    height: 201px;
+    position: absolute;
+    top: 39px;
+    left: 299px;
+    border-radius: 19px;
+  }
+  
+  /* Rectángulo de texto */
+  .rect-text {
+    width: 259px;
+    height: 106px;
+    position: absolute;
+    top: 39px;
+    left: 24px;
+    background: rgba(251, 173, 81, 0.01);
+  }
+  
+  /* Imagen de estadísticas */
+  .stats {
+    width: 211px;
+    height: 114px;
+    position: absolute;
+    top: 156px;
+    left: 38px;
+    border-radius: 5px;
+  }
+  
+  /* Nombre */
+  .name {
+    width: 190px;
+    height: 16px;
+    position: absolute;
+    top: 254px;
+    left: 338px;
+    color: white;
+    font-size: 10px;
+    font-family: 'Konkhmer Sleokchher';
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  /* Descripción */
+  .description {
+    width: 227px;
+    height: 87px;
+    position: absolute;
+    top: 40px;
+    left: 46px;
+    color: white;
+    font-size: 10px;
+    font-family: 'Konkhmer Sleokchher';
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

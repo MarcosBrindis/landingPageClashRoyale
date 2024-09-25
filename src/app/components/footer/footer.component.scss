@@ -1,0 +1,15 @@
+.footer {
+    width: 100%; /* Se ajusta al 100% del ancho de la pantalla */
+    background: rgba(0, 0, 0, 0.9); /* Fondo oscuro */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 10px 0; /* Espaciado opcional alrededor del contenido */
+  }
+  
+  .footer .logo {
+    max-width: 100%; /* Se asegura de que la imagen no exceda el 100% del ancho de la pantalla */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    object-fit: contain; /* Se ajusta sin distorsionar la imagen */
+  }
+  

@@ -1,0 +1,128 @@
+/* Fondo de la página */
+.body-container {
+  background: rgba(0, 0, 0, 0.9);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Estilo para el título */
+.title {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 72px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de la búsqueda y el botón */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el input de búsqueda */
+.search {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  background: #FFFFFF;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Estilo del botón */
+.button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 40px;
+  background-color: #FBAD51;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo para la caja de descripción */
+.rect {
+  background: #2B4874;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Texto dentro de la caja */
+.text {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+
+.rectbotton {
+  background: #2B4874;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-top: 60px;
+}
+
+/* Texto dentro del botón de carga */
+.textbotton {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 768px) {
+  .title {
+      font-size: 32px;
+      line-height: 50px;
+  }
+
+  .search-container {
+      flex-direction: column;
+  }
+
+  .search {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .button1 {
+      width: 100%;
+  }
+
+  .rect {
+      width: 100%;
+  }
+}

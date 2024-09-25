@@ -1,0 +1,49 @@
+/* Fondo de la página */
+body {
+    margin: 0;
+    padding: 50px; /* Ajusta el espacio alrededor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+  }
+  
+  /* Contenedor de las cards */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas por defecto */
+    gap: 200px; /* Espacio entre las cards */
+    max-width: 1200px; /* Ajusta según tus necesidades */
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Estilo general de las cards */
+  app-card {
+    max-width: 550px; /* Ancho máximo de la card */
+    min-width: 300px; /* Ancho mínimo de la card para evitar que se haga demasiado pequeña */
+    width: 100%; /* Ocupa todo el ancho disponible en el contenedor */
+    transition: transform 0.3s ease; /* Transición suave al agrandar */
+  }
+  
+  /* Efecto hover: agrandar la card al pasar el mouse */
+  app-card:hover {
+    transform: scale(1.05); /* Agranda la card al pasar el mouse */
+    z-index: 10; /* Asegura que la card se vea por encima del resto */
+    cursor: pointer;
+  }
+  
+  /* Responsive: Una columna antes, a partir de 1024px */
+  @media (max-width: 1024px) {
+    .cards-container {
+      grid-template-columns: 1fr; /* Una sola columna */
+      gap: 30px; /* Espacio entre las cards en pantallas más pequeñas */
+    }
+  }
+  
+  /* Ajuste general para prevenir scroll horizontal */
+  html, body {
+    overflow-x: hidden; /* Previene desplazamiento horizontal */
+  }
+  
